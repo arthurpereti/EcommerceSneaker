@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
+
 /* Configurações Gerais */
 * {
     margin: 0px;
@@ -33,32 +36,32 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-
-    font-size: 1.3rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #logotopo {
     width: 4rem;
 }
 
+.menu-logo p {
+    font-size: 1.3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .menu-itens {
     display: flex;
+    justify-content: right;
     list-style: none;
-    margin-right: 50px;
 }
 
 
 
 li {
     padding: 10px;
-
 }
 
 .iconmenu {
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
 
 }
 
@@ -82,9 +85,9 @@ li {
 
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
     .main-footer {
-        flex-direction: column
+        flex-direction: column;
     }
 }
 

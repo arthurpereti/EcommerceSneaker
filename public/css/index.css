@@ -1,6 +1,7 @@
 main {
     margin-left: 15rem;
     margin-right: 15rem;
+    box-sizing: border-box;
 }
 
 @media (max-width: 1520px) {
@@ -35,6 +36,12 @@ main {
     width: 75vw;
     height: auto;
     margin: auto auto;
+}
+
+@media (min-width:2400px) {
+    .bannerspgprincipal {
+        width: 90rem;
+    }
 }
 
 /* ==================================================== */
@@ -160,20 +167,25 @@ main {
     }
 } */
 
-
-
+:root{
+    --font-family-informacoestenis: 'Courier New ', monospace;
+}
 /* Nome do tênis  */
 .informacoessobrenometenis {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--font-family-informacoestenis);
     font-style: italic;
     font-size: 1rem;
     margin-bottom: 0.5px;
 
 }
 
+/* @media (min-width:) {
+
+} */
+
 
 /* Valor dos tênis */
 .informacoessobrevalortenis {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--font-family-informacoestenis);
     font-size: 0.75rem;
 }
