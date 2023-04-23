@@ -1,21 +1,45 @@
-main  {
-    margin-left: 15em;
-    margin-right: 15em;
+main {
+    margin-left: 15rem;
+    margin-right: 15rem;
 }
 
-#section1{
+@media (max-width: 1520px) {
+    main{
+        margin-left: 12rem;
+        margin-right: 12rem;
+    }
+}
+@media (max-width: 1120px) {
+    main{
+        margin-left: 9rem;
+        margin-right: 9rem;
+    }
+}
+@media (max-width: 900px) {
+    main{
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+}
+
+
+#section1 {
     margin-top: 1.5rem;
 }
 
-.bannerspgprincipal{
+.bannerspgprincipal {
     display: flex;
     justify-content: center;
 
 
-    width: 1423px;
+    width: 75vw;
+    height: auto;
     margin: auto auto;
 }
 
+/* ==================================================== */
+
+/* são as sections */
 .secaotenispaginaprincipal {
     display: flex;
     justify-content: center;
@@ -25,22 +49,120 @@ main  {
     margin-bottom: 1rem;
 }
 
+
+/* Sub-títulos das categorias */
 #ofertasdasemana,
 #recomendamosparavoce {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.6rem;
+    font-size: 1.6em;
     margin-top: 1rem;
 
     display: flex;
     justify-content: left;
 }
 
-.imgtenissecao{
+
+/* img dos tenis */
+.imgtenissecao {
     width: 12rem;
     height: auto;
     margin-right: 40px;
 }
 
+@media (max-width: 1820px) {
+    .imgtenissecao {
+        width: 11rem;
+
+    }
+}
+@media (max-width: 1720px) {
+    .imgtenissecao {
+        width: 10rem;
+
+    }
+}
+@media (max-width: 1620px) {
+    .imgtenissecao {
+        width: 9rem;
+
+    }
+}
+@media (max-width: 1520px) {
+    .imgtenissecao {
+        width: 9rem;
+
+    }
+}
+@media (max-width: 1440px) {
+    .imgtenissecao {
+        width: 8rem;
+
+    }
+}
+@media (max-width: 1340px) {
+    .imgtenissecao {
+        width: 7.5rem;
+        margin-right: 30px;
+    }
+}
+@media (max-width: 1240px) {
+    .imgtenissecao {
+        width: 7rem;
+
+    }
+}
+@media (max-width: 1210px) {
+    .imgtenissecao {
+        width: 6.3rem;
+
+    }
+}
+@media (max-width: 1150px) {
+    .imgtenissecao {
+        width: 6rem;
+
+    }
+}
+@media (max-width: 1050px) {
+    .imgtenissecao {
+        width: 5.7rem;
+
+    }
+}
+@media (max-width: 1000px) {
+    .imgtenissecao {
+        width: 5.3rem;
+
+    }
+}
+@media (max-width: 950px) {
+    .imgtenissecao {
+        width: 4.9rem;
+
+    }
+}
+@media (max-width: 900px) {
+    .imgtenissecao {
+        width: 4.4rem;
+
+    }
+}
+/* @media (max-width: 850px) {
+    .imgtenissecao {
+        width: 3.9rem;
+
+    }
+}
+@media (max-width: 800px) {
+    .imgtenissecao {
+        width: 3.4rem;
+
+    }
+} */
+
+
+
+/* Nome do tênis  */
 .informacoessobrenometenis {
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
@@ -49,6 +171,8 @@ main  {
 
 }
 
+
+/* Valor dos tênis */
 .informacoessobrevalortenis {
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.75rem;
