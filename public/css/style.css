@@ -1,0 +1,114 @@
+/* Configurações Gerais */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/* ------------------------------------------------- */
+/* Configurações header */
+header {
+    margin-top: 0px;
+
+
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+    font-size: 1.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#logotopo {
+    width: 4rem;
+}
+
+.menu-itens {
+    display: flex;
+    list-style: none;
+    margin-right: 50px;
+}
+
+
+
+li {
+    padding: 10px;
+
+}
+
+.iconmenu {
+    width: 20px;
+    height: 20px;
+
+}
+
+/* ------------------------------------------------- */
+
+
+
+
+/* ------------------------------------------------- */
+/* Configurações Footer */
+
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+
+    text-decoration: none;
+    color: white;
+    background-color: black;
+
+}
+
+@media screen and (max-width:800px) {
+    .main-footer {
+        flex-direction: column
+    }
+}
+
+.caixasfooter {
+    padding: 60px;
+}
+
+footer p {
+    font-size: 1.3rem;
+    padding-bottom: 0.5rem;
+}
+
+footer a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(177, 174, 174);
+}
+
+#semfinslucrativos {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-size: 10px;
+    text-align: center;
+    padding: auto;
+}

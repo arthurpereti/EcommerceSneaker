@@ -1,0 +1,55 @@
+main  {
+    margin-left: 15em;
+    margin-right: 15em;
+}
+
+#section1{
+    margin-top: 1.5rem;
+}
+
+.bannerspgprincipal{
+    display: flex;
+    justify-content: center;
+
+
+    width: 1423px;
+    margin: auto auto;
+}
+
+.secaotenispaginaprincipal {
+    display: flex;
+    justify-content: center;
+
+
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+#ofertasdasemana,
+#recomendamosparavoce {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+
+    display: flex;
+    justify-content: left;
+}
+
+.imgtenissecao{
+    width: 12rem;
+    height: auto;
+    margin-right: 40px;
+}
+
+.informacoessobrenometenis {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 0.5px;
+
+}
+
+.informacoessobrevalortenis {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.75rem;
+}

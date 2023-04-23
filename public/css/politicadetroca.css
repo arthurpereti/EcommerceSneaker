@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.section01 {
+    margin: 0px 150px;
+}
+
+#titulopolitica {
+    padding: 50px;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.textonormapolitica {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+}
+
+.subtitulopolitica {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.12em;
+    text-decoration: none;
+
+}
