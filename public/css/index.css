@@ -1,19 +1,19 @@
 main {
-    margin-left: 15rem;
-    margin-right: 15rem;
+    margin-left: 14rem;
+    margin-right: 14rem;
     box-sizing: border-box;
 }
 
 @media (max-width: 1520px) {
     main{
-        margin-left: 12rem;
-        margin-right: 12rem;
+        margin-left: 11rem;
+        margin-right: 11rem;
     }
 }
 @media (max-width: 1120px) {
     main{
-        margin-left: 9rem;
-        margin-right: 9rem;
+        margin-left: 8rem;
+        margin-right: 8rem;
     }
 }
 @media (max-width: 900px) {
@@ -60,7 +60,7 @@ main {
 /* Sub-títulos das categorias */
 #ofertasdasemana,
 #recomendamosparavoce {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Open Sans';
     font-size: 1.6em;
     margin-top: 1rem;
 
@@ -68,23 +68,46 @@ main {
     justify-content: left;
 }
 
+@media (max-width: 1500px) {
+    #ofertasdasemana, #recomendamosparavoce{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 1000px) {
+    #ofertasdasemana, #recomendamosparavoce{
+        font-size: 1.3rem;
+    }
+}
+
 
 /* img dos tenis */
 .imgtenissecao {
-    width: 12rem;
+    width: 13rem;
     height: auto;
     margin-right: 40px;
 }
 
-@media (max-width: 1820px) {
+@media (max-width: 1900px) {
     .imgtenissecao {
         width: 11rem;
+
+    }
+}
+@media (max-width: 1770px) {
+    .imgtenissecao {
+        width: 10.50rem;
 
     }
 }
 @media (max-width: 1720px) {
     .imgtenissecao {
         width: 10rem;
+
+    }
+}
+@media (max-width: 1670px) {
+    .imgtenissecao {
+        width: 9.5rem;
 
     }
 }
@@ -97,6 +120,12 @@ main {
 @media (max-width: 1520px) {
     .imgtenissecao {
         width: 9rem;
+
+    }
+}
+@media (max-width: 1480px) {
+    .imgtenissecao {
+        width: 8.5rem;
 
     }
 }
@@ -166,6 +195,7 @@ main {
 
     }
 } */
+
 
 :root{
     --font-family-informacoestenis: 'Courier New ', monospace;
