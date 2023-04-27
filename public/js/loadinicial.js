@@ -15,3 +15,11 @@
 //           "body").style.visibility = "visible";
 //     }
 // };
+
+// Pre-loader (index.html)
+
+var loader = document.getElementById("dot-spinner");
+
+window.addEventListener("load", ()=>{
+    loader.style.display = "none"
+})
