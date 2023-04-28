@@ -1,3 +1,7 @@
+:root{
+    --font-family-informacoestenis: 'Courier New ', monospace;
+}
+
 main {
     margin-left: 14rem;
     margin-right: 14rem;
@@ -197,16 +201,48 @@ main {
 } */
 
 
-:root{
-    --font-family-informacoestenis: 'Courier New ', monospace;
-}
 /* Nome do tênis  */
 .informacoessobrenometenis {
     font-family: var(--font-family-informacoestenis);
     font-style: italic;
     font-size: 1rem;
     margin-bottom: 0.5px;
+}
 
+@media (max-width: 1400px) {
+    .informacoessobrenometenis{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 1300px) {
+    .informacoessobrenometenis{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 1200px) {
+    .informacoessobrenometenis{
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 1100px) {
+    .informacoessobrenometenis{
+        font-size: 0.65rem;
+    }
+}
+@media (max-width: 1000px) {
+    .informacoessobrenometenis{
+        font-size: 0.6rem;
+    }
+}
+@media (max-width: 900px) {
+    .informacoessobrenometenis{
+        font-size: 0.55rem;
+    }
+}
+@media (max-width: 800px) {
+    .informacoessobrenometenis{
+        font-size: 0.5rem;
+    }
 }
 
 /* @media (min-width:) {
@@ -218,4 +254,21 @@ main {
 .informacoessobrevalortenis {
     font-family: var(--font-family-informacoestenis);
     font-size: 0.75rem;
+}
+
+@media (max-width: 1400px) {
+    .informacoessobrevalortenis{
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 1300px) {
+    .informacoessobrevalortenis{
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .informacoessobrevalortenis{
+        font-size: 0.6rem;
+    }
 }
