@@ -27,6 +27,9 @@ main {
     }
 }
 
+/* ==================================================== */
+
+/* BANNER  */
 
 #section1 {
     margin-top: 1.5rem;
@@ -37,8 +40,9 @@ main {
     justify-content: center;
 
 
-    width: 75vw;
+    width: 76vw;
     height: auto;
+    max-height: 340px;
     margin: auto auto;
 }
 
@@ -60,6 +64,7 @@ main {
     margin-bottom: 1rem;
 }
 
+/* ==================================================== */
 
 /* Sub-títulos das categorias */
 #ofertasdasemana,
@@ -83,10 +88,11 @@ main {
     }
 }
 
+/* ==================================================== */
 
 /* img dos tenis */
 .imgtenissecao {
-    width: 13rem;
+    width: 12.5rem;
     height: auto;
     margin-right: 40px;
 }
@@ -200,6 +206,7 @@ main {
     }
 } */
 
+/* ==================================================== */
 
 /* Nome do tênis  */
 .informacoessobrenometenis {
@@ -249,6 +256,8 @@ main {
 
 } */
 
+
+/* ==================================================== */
 
 /* Valor dos tênis */
 .informacoessobrevalortenis {
