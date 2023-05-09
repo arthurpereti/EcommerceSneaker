@@ -91,7 +91,7 @@ li {
 }
 
 .caixasfooter {
-    padding: 60px;
+    padding: 3.75rem;
 }
 
 footer p {
@@ -103,6 +103,21 @@ footer a {
     font-size: 1rem;
     text-decoration: none;
     color: rgb(177, 174, 174);
+}
+
+.caixasfooter .listaredessociais{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}
+
+
+.caixasfooter .listaredessociais img{
+    color: white;
+
+    max-width: 1.3rem;
+    max-height: 1.3rem;
 }
 
 #semfinslucrativos {

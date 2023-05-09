@@ -64,6 +64,10 @@ main {
     margin-bottom: 1rem;
 }
 
+.tenispaginaprincipal{
+    padding: 0.4rem;
+}
+
 /* ==================================================== */
 
 /* Sub-títulos das categorias */
@@ -92,7 +96,7 @@ main {
 
 /* img dos tenis */
 .imgtenissecao {
-    width: 12.5rem;
+    width: 12rem;
     height: auto;
     margin-right: 40px;
 }
