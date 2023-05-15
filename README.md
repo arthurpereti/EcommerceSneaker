@@ -1,4 +1,4 @@
-# E-commerce de Sneakers
+# E-commerce Sneakers
 
 ![Logo do Projeto](https://github.com/arthurpereti/EcommerceSneaker/blob/main/public/img/logo-inspiratioair.png)
 
@@ -40,6 +40,11 @@ Contribuições são bem-vindas! Se você deseja contribuir para este projeto, s
 3. Faça as alterações necessárias e adicione os commits correspondentes (git commit -m 'Adicionando nova funcionalidade').
 4. Faça o push para o branch criado (git push origin minha-funcionalidade).
 5. Abra um Pull Request neste repositório e aguarde a análise e aprovação.
+
+## Links 
+* Deploy no Netlify: https://ecommercesneaker.netlify.app/
+* Repositório: https://github.com/arthurpereti/EcommerceSneaker
+<!-- * Design no Figma: https://www.figma.com/community/file/1222060007934600841 -->
 
 ## Créditos
 * As imagens dos tênis utilizadas na loja são de propriedade de seus respectivos fabricantes.
