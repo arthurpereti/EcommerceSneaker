@@ -4,6 +4,8 @@
 
 #### - Status do Projeto: Em andamento
 
+![](https://github.com/arthurpereti/EcommerceSneaker/blob/main/public/img/readme/site%20indexhtml.png)
+
 ## Descrição
 O projeto consiste no desenvolvimento de um e-commerce de sneakers, uma plataforma online para compra e venda de tênis. O objetivo é proporcionar uma experiência de compra agradável para os usuários, oferecendo uma variedade de modelos de tênis e facilitando o processo de compra e pagamento.
 
