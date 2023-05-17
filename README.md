@@ -55,4 +55,4 @@ Contribuições são bem-vindas! Se você deseja contribuir para este projeto, s
 * Este projeto está licenciado sob a MIT License.
 
 ## Autor 
-* Arthur Henrique Pereti Coelho
+* Arthur Henrique Pereti Coelho | Full-Stack Developer
