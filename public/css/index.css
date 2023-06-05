@@ -3,27 +3,27 @@
 }
 
 main {
-    margin-left: 14rem;
-    margin-right: 14rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
     box-sizing: border-box;
 }
 
 @media (max-width: 1520px) {
     main{
-        margin-left: 11rem;
-        margin-right: 11rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
     }
 }
 @media (max-width: 1120px) {
     main{
-        margin-left: 8rem;
-        margin-right: 8rem;
+        margin-left: 7rem;
+        margin-right: 7rem;
     }
 }
 @media (max-width: 900px) {
     main{
-        margin-left: 6rem;
-        margin-right: 6rem;
+        margin-left: 5rem;
+        margin-right: rem;
     }
 }
 
@@ -32,15 +32,11 @@ main {
 /* BANNER  */
 
 #section1 {
-    margin-top: 1.5rem;
+    padding-top: 1rem;
 }
 
 .bannerspgprincipal {
-    display: flex;
-    justify-content: center;
-
-
-    width: 76vw;
+    width: 80vw;
     height: auto;
     max-height: 340px;
     margin: auto auto;
@@ -59,7 +55,7 @@ main {
     display: flex;
     justify-content: center;
 
-
+    box-sizing: border-box;
     padding: 10px;
     margin-bottom: 1rem;
 }
@@ -74,7 +70,7 @@ main {
 #ofertasdasemana,
 #recomendamosparavoce {
     font-family: system-ui, -apple-system, 'Segoe UI', 'Open Sans';
-    font-size: 1.6em;
+    font-size: 1.5em;
     margin-top: 1rem;
 
     display: flex;
@@ -83,12 +79,17 @@ main {
 
 @media (max-width: 1500px) {
     #ofertasdasemana, #recomendamosparavoce{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+}
+@media(max-width: 1250px) {
+    #ofertasdasemana, #recomendamosparavoce{
+        font-size: 1.15rem;
     }
 }
 @media (max-width: 1000px) {
     #ofertasdasemana, #recomendamosparavoce{
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 }
 
@@ -98,7 +99,7 @@ main {
 .imgtenissecao {
     width: 12rem;
     height: auto;
-    margin-right: 40px;
+    margin-right: 2em;
 }
 
 @media (max-width: 1900px) {
@@ -133,13 +134,13 @@ main {
 }
 @media (max-width: 1520px) {
     .imgtenissecao {
-        width: 9rem;
+        width: 8.5rem;
 
     }
 }
 @media (max-width: 1480px) {
     .imgtenissecao {
-        width: 8.5rem;
+        width: 8.25rem;
 
     }
 }
@@ -217,7 +218,7 @@ main {
     font-family: var(--font-family-informacoestenis);
     font-style: italic;
     font-size: 1rem;
-    margin-bottom: 0.5px;
+
 }
 
 @media (max-width: 1400px) {
