@@ -1,6 +1,10 @@
 const express = require('express')
 const app = express()
 const exphbs = require('express-handlebars')
+const conn = require('./db/conn')
+const Usuario = require('./models/Usuario')
+
+let log = false
 
 const PORT = 3000
 const hostname = 'localhost'
@@ -18,32 +22,46 @@ app.set('views', './views');
 
 
 // ------ Rotas do sistema ------
-app.get('/', (req, res) => {
-    res.render('index');
-});
 
-app.get('/home', (req, res) => {
-    res.render('index');
-});
+app.post('/logjn', async (req,res)=>{
+    const email = req.body.email
+    const senha = req.body.senha
+    const pesq = await Usuario.findOne({raw:true, where: {email:email && {senha:senha}}})
+    console.log(pesq)
+    if(pesq == null)(
+        res.render('login', {log})
+    );else(
+        log = true,
+        res.render('cadastrar', {log, nome: pesq.nome})
+    )
+})
 
-app.get('/teste', async (req, res) => {
-    res.render('home');
-});
+app.get('/login', (req,res)=>{
+    res.render('login')
+})
 
-app.get('/politicadecookie', async(req, res) =>{
+app.get('/politicadecookie', (req, res) =>{
     res.render('politicadecookie')
 })
 
-app.get('/politicadeprivacidade', async (req, res) => {
+app.get('/politicadeprivacidade',  (req, res) => {
     res.render('politicadeprivacidade');
 });
 
-app.get('/politicadetroca', async(req, res) =>{
+app.get('/politicadetroca', (req, res) =>{
     res.render('politicadetroca')
 })
 
+app.get('/', (req, res) => {
+    res.render('index', {log});
+});
 
 // =======================================
-app.listen(PORT, hostname, () => {
-    console.log(`Servidor Rodando em ${hostname}:${PORT}`)
-});
+conn.sync().then(()=>{
+    app.listen(PORT, hostname, () => {
+        console.log(`Servidor Rodando em ${hostname}:${PORT}`)
+    });
+}).catch(()=>{
+    console.log("Servidor não está rodando")
+})
+

@@ -43,15 +43,20 @@ header {
     width: 4rem;
 }
 
-.menu-logo p {
-    font-size: 1.3rem;
-    font-family: 'Open Sans', sans-serif;
-}
-
 .menu-itens {
     display: flex;
     justify-content: right;
     list-style: none;
+}
+
+
+.menu-logo p {
+    font-size: 1.3rem;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 
