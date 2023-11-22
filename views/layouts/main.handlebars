@@ -9,15 +9,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Author" content="Arthur Pereti">
 
-    <link rel="stylesheet" href="/css/changemodeinindex.css">
-    <link rel="stylesheet" href="/css/iconsocialfooter.css">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/loaderindex.css">
-    <link rel="stylesheet" href="/css/menubarindex.css">
     <link rel="stylesheet" href="/css/menubarindex.css">
     <link rel="stylesheet" href="/css/politicasdaloja.css">
     <link rel="stylesheet" href="/css/sobrenos.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/cadastro.css">
+
 
 
     <link rel="icon" href="/img/icon/sneakers.png" sizes="64x64">
@@ -29,6 +29,8 @@
     <script src="/js/loadinicial.js"></script>
     <script src="/js/changemodecolor.js" defer></script>
     <script src="/js/menubarindex.js" defer></script>
+    <script src="/js/itens_carrinho.js" defer></script>
+    <script src="/js/carrinho.js" defer></script>
 
     <title>SneakerHub - Produtos</title>
 </head>
@@ -38,27 +40,26 @@
     {{#if log}}
         <header class="menu">
             <div class="menu-logo">
-                <img id="logotopo" src="/img/logo-inspiratioair.png" alt="logo air jordan 1">&ensp;
+                <a href="/"><img id="logotopo" src="/img/logo-inspiratioair.png" alt="logo air jordan 1">&ensp;</a>
                 <p>SneakerHub</p>
             </div>
             <nav>
                 <ul class="menu-itens">               
-                    <li><a href=""><span class="material-symbols-outlined">shopping_bag</span></a></li>
-                    <li><a href=""><span class="material-symbols-outlined">search</span></a></li>
-                    <a>{{nome}}</a>
+                    <li><a href="/carrinho"><span class="material-symbols-outlined">shopping_bag</span></a></li>
+                    <li><a href="/gerenciador">ADM</a></li>
+                    <a>{{nomeuser}}</a>
                 </ul>
             </nav>
         </header>
     {{else}}
         <header class="menu">
             <div class="menu-logo">
-                <img id="logotopo" src="/img/logo-inspiratioair.png" alt="logo air jordan 1">&ensp;
+                <a href="/"><img id="logotopo" src="/img/logo-inspiratioair.png" alt="logo air jordan 1">&ensp;</a>
                 <p>SneakerHub</p>
             </div>
             <nav>
                 <ul class="menu-itens">               
-                    <li><a href=""><span class="material-symbols-outlined">shopping_bag</span></a></li>
-                    <li><a href=""><span class="material-symbols-outlined">search</span></a></li>
+                    <li><a href="/carrinho"><span class="material-symbols-outlined">shopping_bag</span></a></li>
                     <li><a href="/login"><span class="material-symbols-outlined">account_circle</span></a></li>
                 </ul>
             </nav>

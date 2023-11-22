@@ -1,24 +1,21 @@
 const { DataTypes } = require('sequelize')
 const db = require('../db/conn')
 
-const Usuario = db.define('usuario', {
+const Produto = db.define('produto', {
     nome: {
-        type: DataTypes.STRING
-    },
-    email: {
         type: DataTypes.STRING(100)
     },
-    telefone: {
-        type: DataTypes.STRING(11)
-    },
-    senha: {
+    preco: {
         type: DataTypes.STRING(100)
+    },
+    quantidade: {
+        type: DataTypes.INTEGER
     }
 },{
     updatedAt: false,
     createdAt: false
 })
 
-// Usuario.sync({force:true})
+// Produto.sync({force:true})
 
-module.exports = Usuario
+module.exports = Produto

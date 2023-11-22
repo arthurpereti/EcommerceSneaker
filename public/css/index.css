@@ -2,7 +2,7 @@
     --font-family-informacoestenis: 'Courier New ', monospace;
 }
 
-main {
+/* main {
     margin-left: 12rem;
     margin-right: 12rem;
     box-sizing: border-box;
@@ -25,7 +25,7 @@ main {
         margin-left: 5rem;
         margin-right: rem;
     }
-}
+} */
 
 /* ==================================================== */
 
@@ -33,13 +33,14 @@ main {
 
 #section1 {
     padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .bannerspgprincipal {
-    width: 80vw;
-    height: auto;
-    max-height: 340px;
-    margin: auto auto;
+    width: 70rem;
 }
 
 @media (min-width:2400px) {
@@ -75,6 +76,7 @@ main {
 
     display: flex;
     justify-content: left;
+    margin-left: 7rem;
 }
 
 @media (max-width: 1500px) {
