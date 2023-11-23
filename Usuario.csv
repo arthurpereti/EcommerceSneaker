@@ -1,0 +1,6 @@
+id;nome;email;telefone;senha;tipo
+1;Arthur;arthurcoelho2005@outlook.com;47991721809;123;admin
+2;Cliente01;cliente01;47111111111;123;cliente
+3;Cliente02;cliente02;47111111112;123;cliente
+4;Cliente03;cliente03;47111111113;123;cliente
+5;Cliente04;cliente04;47111111114;123;cliente

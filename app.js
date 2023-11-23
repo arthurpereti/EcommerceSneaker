@@ -25,6 +25,16 @@ app.set('views', './views');
 
 
 // ------ Rotas do sistema ------
+app.post('/apagarproduto', async (req,res)=>{
+    const nomeproduto = req.body.nomeproduto
+    await Produto.destroy({where:{nome:nomeproduto}})
+    res.render('apagarproduto', {log, nomeuser})
+})
+
+app.get('/apagarproduto', (req,res)=>{
+    res.render('apagarproduto', {log, nomeuser})
+})
+
 app.get('/listarproduto', async (req,res)=>{
     const pesq = await Produto.findAll({raw:true})
     console.log(pesq)

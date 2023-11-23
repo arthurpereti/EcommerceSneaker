@@ -136,3 +136,16 @@ footer a {
     text-align: center;
     padding: auto;
 }
+
+#alinhamentoforms{
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+@media (max-width:600px) {
+    #alinhamentoforms{
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    
+}
