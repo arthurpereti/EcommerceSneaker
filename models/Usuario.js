@@ -13,6 +13,9 @@ const Usuario = db.define('usuario', {
     },
     senha: {
         type: DataTypes.STRING(100)
+    },
+    tipo: {
+        type: DataTypes.STRING(100)
     }
 },{
     updatedAt: false,

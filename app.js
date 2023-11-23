@@ -2,7 +2,9 @@ const express = require('express')
 const app = express()
 const exphbs = require('express-handlebars')
 const conn = require('./db/conn')
+const Produto = require('./models/Produto')
 const Usuario = require('./models/Usuario')
+
 
 let log = false
 let nomeuser = ""
@@ -23,18 +25,23 @@ app.set('views', './views');
 
 
 // ------ Rotas do sistema ------
-app.get('/listarproduto', (req,res)=>{
-    res.render('listarproduto')
+app.get('/listarproduto', async (req,res)=>{
+    const pesq = await Produto.findAll({raw:true})
+    console.log(pesq)
+    res.render('listarproduto', {valores: pesq, log, nomeuser})
 })
 
-app.post('/cadastrarproduto', (req,res)=>{
+app.post('/cadastrarproduto', async (req,res)=>{
     const nome = req.body.nome
     const preco = req.body.preco
     const quantidade = req.body.preco
+    await Produto.create({nome:nome, preco:preco, quantidade:quantidade})
+    res.render('gerenciador')
+
 })
 
 app.get('/cadastrarproduto', (req,res)=>{
-    res.render('cadastrarproduto')
+    res.render('cadastrarproduto', {log, nomeuser})
 })
 
 app.get('/gerenciador', (req,res)=>{
@@ -49,7 +56,7 @@ app.post('/login', async (req,res)=>{
     let msg = 'Usuário não Cadastrado'
     if(pesq == null){
         res.render('index', {msg})
-    }else if(email == pesq.email && senha == pesq.senha){
+    }else if(email == pesq.email && senha == pesq.senha && pesq.tipo == 'admin'){
         log = true
         nomeuser = pesq.nome
         res.render('index', {log, nomeuser})
@@ -67,7 +74,8 @@ app.post('/cadastro', async (req,res)=>{
     const telefone = req.body.telefone
     const email = req.body.email
     const senha = req.body.senha
-    await Usuario.create({nome:nome,telefone:telefone,email:email,senha:senha})
+    const tipo = 'cliente'
+    await Usuario.create({nome:nome,telefone:telefone,email:email,senha:senha, tipo:tipo})
     res.render('login', {log, nomeuser})
 })
 

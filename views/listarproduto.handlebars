@@ -1,0 +1,19 @@
+<center><h1>Listar Produtos</h1>
+<br>
+<table>
+    <thead>
+        <th>Nome</th>
+        <th>Preço</th>
+        <th>Quantidade</th>
+    </thead>
+    <tbody>
+    {{#each valores}}
+        <tr>
+            <td>{{this.nome}}</td>
+            <td>{{this.preco}}</td>
+            <td>{{this.quantidade}}</td>
+        </tr>
+    {{/each}} 
+    </tbody>
+</table><br>
+</center>
