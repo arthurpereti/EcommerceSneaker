@@ -24,9 +24,6 @@ total_carrinho.textContent = total.toFixed(2)
 limparcarrinho.addEventListener("click", () => {
     // Limpe os itens do carrinho no Local Storage
     localStorage.removeItem("carrinho")
-
-
-    // Limpe a lista de itens no carrinho e o total na página
     itens_carrinho.innerHTML = ""
     qtde_total.textContent = "0"
     total_carrinho.textContent = "0.00"
@@ -52,10 +49,6 @@ botaocomprar.addEventListener("click", () => {
     .then((data) => {
 
       console.log(data.message)
-      // Exibe a mensagem de retorno no elemento HTML
-      const mensagemCompra = document.getElementById("mensagem-compra")
-      mensagemCompra.textContent = data.message;
-
       // Limpar o carrinho local após a compra.
       localStorage.removeItem("carrinho")
       itens_carrinho.innerHTML = ""
