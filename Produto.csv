@@ -1,6 +1,14 @@
 id;nome;preco;quantidade
-1;Tênis Teste;12.90;1
-2;Nike Air Max;12.91;2
-3;Yeezy Boost;12.92;3
-4;Air Force;12.93;4
-5;Nike SB;12.94;5
+1;Yeezy Boost V2 Core;1999.90;999
+2;Yeezy Boost V2 Slate;2499.90;999
+3;Yeezy Boost V2 Oreo;2999.90;999
+4;Yeezy Boost V2 White;1499.90;999
+5;Yeezy Boost V2 Zebra;2599.90;999
+6;Yeezy Boost V2 Black Red;2799.90;999
+7;Nike Air Max 270;599.90;999
+8;Nike Dunk Low;1299.90;999
+9;Nike Air Force 1;799.90;999
+10;Nike Air Max 90;999.90;999
+11;Nike Air Max Bolt;349.90;999
+12;Air Jordan 1;1249.90;999
+

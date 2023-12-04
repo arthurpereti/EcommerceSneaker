@@ -47,8 +47,11 @@
             <nav>
                 <ul class="menu-itens">               
                     <li><a href="/carrinho"><span class="material-symbols-outlined">shopping_bag</span></a></li>
-                    <li><a href="/gerenciador">ADM</a></li>
-                    <a>{{nomeuser}}</a>
+                    {{#if admin}}
+                         <li><a href="/gerenciador">ADM</a></li>
+                    {{/if}}                   
+                    <li><a>{{nomeuser}}</a></li>
+                    <li><a href="/logout">Logout</a></li>
                 </ul>
             </nav>
         </header>
