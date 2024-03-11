@@ -23,7 +23,7 @@ O projeto consiste no desenvolvimento de um e-commerce de sneakers, uma platafor
 * Express.js: framework para facilitar a criação de rotas e o gerenciamento de requisições HTTP.
 * Express-handlebars: para fornecer uma interface visual para o usuário 
 * MySQL: banco de dados relacional utilizado para armazenar informações de produtos e pedidos.
-* Frameworks e bibliotecas adicionais: poderão ser utilizados frameworks como Bootstrap ou bibliotecas como jQuery para agilizar o desenvolvimento e melhorar a experiência do usuário.
+* Frameworks e bibliotecas adicionais: Bootstrap
 
 ## Instalação
 1. Clone ou faça o download deste repositório.
